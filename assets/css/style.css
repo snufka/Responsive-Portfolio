@@ -1,0 +1,203 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
+   
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    
+}
+
+body {
+    background-image: url("https://assets.awwwards.com/awards/images/2015/04/pattern.jpg");
+    background-color: #ffffff;
+      margin: 0 auto;
+  
+  }
+header {
+
+  margin: 0 auto;
+
+}
+ 
+
+/*navigation bar*/
+
+  .container{
+    clear:both;
+    overflow:auto;
+     background-color: #ffffff;
+   }
+  
+  nav{float:right;
+      }
+  
+  .logo 
+  {float:left;
+    background-color: #4aaaa5;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 57px;
+    height: 75px;
+    padding: 2px;
+  }
+  
+  ul li{
+    display: inline-block; 
+    padding:10px;
+    font-size:20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;
+  
+  }
+  
+  a{    
+    font-size:20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;
+    font-style: normal
+  }
+
+
+/* Block style*/
+  section 
+  {    background-color:#ffffff;
+    
+    padding: 20px;
+    text-align: left;
+    border: 2px solid#dddddd;
+    border-radius: 5px;
+    margin: 0 auto;
+      width: 960px;
+    box-sizing: border-box;  /* Add this */
+  }
+
+  /*form*/
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+
+
+/*footer*/
+footer {
+  border:2px 0px 0px 0px;
+  border-color: #4aaaa5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    height: 40px;
+  }
+
+  /*text on image*/
+  .container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4aaaa5;
+    padding: 12px 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #avatar{
+      float: left;
+      height: 180px;
+      width: 180px;
+      padding: 5px;
+    }
+.container-pro{
+display: flex;
+}
+ 
+.imges-area{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.single-img{
+  padding: 0 12px 12px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo 
+    {float:left;
+      background-color: #4aaaa5;
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+     width: 100%;
+     text-align: center;
+    }
+    .form-cont{
+      width: 100%;
+      }
+      .bio{
+        width: 100%;}
+  #avatar{
+    width: 50%;
+    height: auto;
+  }
+  .bio-text{
+    width: 100%;
+  }
+  }
+
+  @media screen and (max-width: 640px) {
+    .logo 
+    {float:left;
+      background-color: #4aaaa5;
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+     width: 100%;
+     text-align: center
+    }
+.form-cont{
+width: 100%;
+}
+.bio{
+  width: 100%;
+}
+#avatar{
+width: 100%;
+height: auto;
+  }
+.bio-text{
+  width: 100%;
+}
+  }
