@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My First Object</title>
+</head>
+
+<body>
+
+  <script>
+
+    var car = {
+      make: "Honda",
+      model: "Fit",
+      color: "Blue Raspberry",
+      mileage: 3000,
+      isWorking: true,
+
+      driveToWork: function () {
+
+        alert("Old Mileage: " + this.mileage);
+
+        this.mileage = this.mileage + 8;
+
+        alert("New mileage: " + this.mileage);
+      },
+
+      driveAroundWorld: function () {
+
+        alert("Old Mileage: " + this.mileage);
+
+        this.mileage = this.mileage + 24000;
+
+        alert("New Mileage: " + this.mileage);
+        alert("Car needs a tuneup!");
+
+        this.isWorking = false;
+      },
+
+      getTuneUp: function () {
+        alert("Car is ready to go!");
+        this.isWorking = true;
+      },
+
+      honk: function () {
+        alert("Honk! Honk!");
+      }
+    };
+
+    var user;
+    var options = ["h", "w", "t", "d"]
+
+    document.onkeyup = function (event) {
+
+      if (event.key.toLowerCase() === "h") {
+        car.honk()
+      }
+      if (event.key.toLowerCase() === "w") {
+        car.driveAroundWorld()
+      }
+      if (event.key.toLowerCase() === "t") {
+        car.getTuneUp()
+      }
+      if (event.key.toLowerCase() === "d") {
+        car.driveToWork()
+      }
+      
+      if (!options.includes(event.key.toLowerCase())) {
+        alert("You didn´t enter a valid input!");
+      }
+    }
+
+
+
+
+  </script>
+
+</body>
+
+</html>

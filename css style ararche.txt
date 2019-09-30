@@ -1,0 +1,4 @@
+#id selectors worth 100
+class selector = 10 
+tag =1
+unless you aplly style element inside <h1 style="color:red;"> =150

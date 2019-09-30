@@ -1,0 +1,15 @@
+HTML
+adding H1 to the fan page to make it look better
+deleting the instruction section in the code
+adding <p> tags between each paragraph of text 
+adding the link in the to BOO's Wikipedia page inside the <a> tag by pasting in to ""
+adding <> to the img section 
+adding <li> and </li> to each item on the list
+changing the JS source file name from errors.js to logic.js
+changing the color of the buttons according to the color class id so that id="text green' will be under the button green
+
+JavaScript
+line 6 inside var booFacts each fact needs to be separated by ""
+in the line about changing color to pink, pink was without ""
+Grow and shrink functions were lacking ""
+adding comments 
