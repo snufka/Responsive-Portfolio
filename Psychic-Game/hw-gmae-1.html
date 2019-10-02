@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Function</title>
+</head>
+<body>
+
+ 
+    <div>
+      <h1>Guess what letter I'm thinking of</h1>
+      <h3>Wins:<span id="wins"></span></h3>
+      <h3> Losses:<span id="losses"></span></h3>
+      <h3>Guesses Left:<span id="leftGuesse"></span></h3>
+      <h3>Your Guesses So Far:<span id="user"></span></h3>
+    </div>
+    <script type="text/javascript">
+
+      var alphabet = "abcdefghijklmnopqrstuvwxyz";
+      var computer = alphabet[Math.floor(Math.random() * alphabet.length)]
+      console.log(computer);
+      var wins = 0;
+      var losses = 0;
+      var leftGuesse = 9;
+
+
+      document.onkeypress = function (event) {
+        console.log(event)
+        var user = String.fromCharCode(event.keyCode)
+        document.getElementById("user").innerHTML = user;
+
+        
+        document.getElementById("wins").innerHTML = wins; 
+        document.getElementById("leftGuesse").innerHTML = leftGuesse;
+        document.getElementById("losses").innerHTML = losses;
+        if (user == computer) {
+          wins++;
+
+        } else if (user !== computer) {
+        leftGuesse--
+        //leftGuesse[guesse]  
+        
+        }
+        else if (guesse === 9 && wins === 0) {
+          losses++
+          
+        }
+      }
+    </script>
+  </body>
+
+</html>
